@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  liquibase:
+    change-log: 'classpath:db/changelog/change-log.sql'
+
+logging:
+  level:
+    liquibase: INFO
+
+keystore:
+  password: oauth2

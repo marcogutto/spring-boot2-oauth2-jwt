@@ -1,4 +1,4 @@
-package com.oauth2.jwtresource.config;
+package com.oauth2.jwtresource.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
