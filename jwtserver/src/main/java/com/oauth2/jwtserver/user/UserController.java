@@ -15,5 +15,4 @@ public class UserController {
     public ResponseEntity<Principal> get(final Principal principal) {
         return ResponseEntity.ok(principal);
     }
-
 }

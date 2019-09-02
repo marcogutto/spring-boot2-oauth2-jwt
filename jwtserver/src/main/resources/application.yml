@@ -2,11 +2,25 @@ server:
   port: 9000
 
 spring:
+  h2:
+  console:
+    enabled: false
+  datasource:
+    url: 'jdbc:h2:mem:testdb'
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  liquibase:
+    change-log: 'classpath:db/changelog/change-log.sql'
   jackson:
     serialization:
       INDENT_OUTPUT: true
-  liquibase:
-    change-log: 'classpath:db/changelog/change-log.sql'
+
 
 logging:
   level:

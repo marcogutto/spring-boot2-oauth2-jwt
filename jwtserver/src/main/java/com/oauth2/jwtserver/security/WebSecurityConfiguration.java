@@ -36,7 +36,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-    	
     	return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
@@ -49,5 +48,4 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         }
         return userDetailsService;
     }
-
 }
