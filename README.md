@@ -7,7 +7,7 @@ keytool -genkeypair -alias oauth2 -keyalg RSA -keypass password -keystore jwt.jk
 cd jwtresource/
 gradlew bootrun
 
-cd jwtserver
+cd jwtserver/
 gradlew bootrun
 
 ## Post with credentials to get the token
