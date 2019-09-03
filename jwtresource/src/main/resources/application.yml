@@ -6,5 +6,15 @@ spring:
     serialization:
       INDENT_OUTPUT: true
       
-keystore:
-  password: oauth2
+authserver:
+  hostname: http://localhost:9000
+      
+security:      
+  oauth2:
+    client:
+      clientId: clientId
+      clientSecret: secret
+      accessTokenUri: ${authserver.hostname}/oauth/access_token
+    resource:
+      userInfoUri: ${authserver.hostname}/me
+      tokenInfoUri: ${authserver.hostname}/oauth/check_token

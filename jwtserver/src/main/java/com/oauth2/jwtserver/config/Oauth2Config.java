@@ -1,4 +1,4 @@
-package com.oauth2.jwtserver.security;
+package com.oauth2.jwtserver.config;
 
 import javax.sql.DataSource;
 

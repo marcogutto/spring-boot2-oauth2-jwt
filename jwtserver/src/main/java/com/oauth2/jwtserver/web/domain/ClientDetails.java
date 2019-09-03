@@ -1,4 +1,4 @@
-package com.oauth2.jwtserver.oauth;
+package com.oauth2.jwtserver.web.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
